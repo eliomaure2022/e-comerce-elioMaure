@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
 /**
  * @openapi
  * components:
- *   schema:
+ *   schemas:
  *     addProductToCart:
  *       type: object
  *       properties:

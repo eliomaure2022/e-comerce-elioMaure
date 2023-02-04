@@ -33,7 +33,7 @@ const router = Router();
  *                 message:
  *                   type: string
  *                   example: validation error
- * /api/v1/user/:{id}/order:
+ * /api/v1/user/{id}/order:
  *   get:
  *     security:
  *       - bearerAuth: []

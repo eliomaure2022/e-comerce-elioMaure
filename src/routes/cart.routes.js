@@ -23,7 +23,7 @@ const router = Router();
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#components/schema/addProduct'
+ *             $ref: '#components/schemas/addProduct'
  *     responses:
  *       200:
  *         description: post

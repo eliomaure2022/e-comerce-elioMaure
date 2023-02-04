@@ -15,7 +15,7 @@ const router = Router();
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schema/register'
+ *             $ref: '#/components/schemas/register'
  *     responses:
  *       201:
  *         description: Created
@@ -37,14 +37,14 @@ const router = Router();
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schema/login'
+ *             $ref: '#/components/schemas/login'
  *     responses:
  *       200:
  *         description: OK
  *         content:
  *           aplication/json:
  *             schema:
- *               $ref: '#/components/schema/loginResponse'
+ *               $ref: '#/components/schemas/loginResponse'
  *       400:
  *         description: not found
  *         content:

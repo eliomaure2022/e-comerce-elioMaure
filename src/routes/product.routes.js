@@ -19,7 +19,7 @@ const router = Router();
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schema/createProduct'
+ *             $ref: '#/components/schemas/createProduct'
  *     responses:
  *       200:
  *         description: OK
@@ -41,6 +41,37 @@ const router = Router();
  *                 message:
  *                   type: string
  *                   example: something wrong
+ *   get:
+ *     summary: get all products to the user
+ *     tags: [Product]
+ *     requestBody:
+ *       description: required fields to get all products to users
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schema/getAllProducts'
+ *     responses:
+ *       200:
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: all products
+ *       400:
+ *         description: not created
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: something wrong  vf  nnu7
  */
 
 router.post("/", createProduct);
